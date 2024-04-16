@@ -29,7 +29,7 @@ export const Newsletter = () => {
         <section className="subscription bg-white">
             <div className="container">
                 <div className="row">
-                    <div className="col-lg-12">
+                    <div className="col-lg-12" style={{backgroundColor:"rgb(217, 227, 241)"}}>
                         <div className="subscription-wrapper">
                             <div className="d-flex subscription-content justify-content-between align-items-center flex-column flex-md-row text-center text-md-left">
                                 <h3 className="flex-fill">Enterate de<br />todas las novedades</h3>
@@ -46,7 +46,7 @@ export const Newsletter = () => {
                                         />
                                     </div>
                                     <div className="col-lg-5 my-md-2 my-2">
-                                        <button type="submit" className="btn btn-primary btn-lg border-0 w-100">Subscribe Now</button>
+                                        <button type="submit" className="btn btn-primary btn-lg border-0 w-100">Suscribete ahora</button>
                                     </div>
                                 </form>
                             </div>

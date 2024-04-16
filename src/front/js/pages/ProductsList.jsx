@@ -42,7 +42,7 @@ export const ProductsList = () => {
     }
 
     return (
-        <div className="container">
+        <div className="container mb-5">
             <h1 className="mb-4">Products List</h1>
             <AlertComponent show={showAlert} message={alertMessage} onClose={() => setShowAlert(false)} />
             <div className="row row-cols-1 row-cols-md-3 row-cols-xl-5 g-2">
@@ -54,7 +54,7 @@ export const ProductsList = () => {
                                 <div className="card-body">
                                     <h5 className="card-title">{product.name}</h5>
                                     <p className='card-text'>
-                                        $ {product.price}.00
+                                       € {product.price}.00
                                     </p>
                                 </div>
                                 <div className="d-flex justify-content-between align-items-center">

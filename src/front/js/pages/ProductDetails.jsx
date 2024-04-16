@@ -63,7 +63,7 @@ export const ProductDetails = () => {
             backgroundImage: 'url("")',
         }}>
             <AlertComponent show={showAlert} message={alertMessage} onClose={() => setShowAlert(false)} />
-            <h1 className="text-center mt-4">Details</h1>
+            <h1 className="text-center mt-4">Detalles</h1>
             <div className="row">
                 <div className="col-md-6" style={{ width: '300px' }}>
                     <div className="card border-dark my-3 mx-2 text-bg">
@@ -71,7 +71,7 @@ export const ProductDetails = () => {
                         <div className="card-body">
                             <h5 className="card-title">{details.name}</h5>
                             <p className='card-text'>
-                                $ {details.price}.00
+                              € {details.price}.00
                             </p>
                                 {store.isLogin && (   
                                      <button className="btn btn-primary my-auto" onClick={() => handleAddToCart(details)}>
@@ -84,10 +84,10 @@ export const ProductDetails = () => {
                 <div className="col-md-6">
                     <div className="card border-dark my-3 mx-2 text-bg">
                         <div className="card-body">
-                            <h5 className="card-title">Details</h5>
-                            <p className="card-text">Name: {details.name}</p>
-                            <p className="card-text">Price: ${details.price}</p>
-                            <p className="card-text">Description: {details.description}</p>
+                            <h5 className="card-title">Detalles</h5>
+                            <p className="card-text">Nombre: {details.name}</p>
+                            <p className="card-text">Precio: €{details.price}</p>
+                            <p className="card-text">Descripción: {details.description}</p>
 
                             {/* todos los parametros que quiera los pongo aqui */}
                             <button onClick={() => actions.toggleFavorite(details)} className="btn btn-outline-warning my-auto">
